@@ -1,0 +1,71 @@
+.Form{
+    width: 600px;
+    margin: 0 auto;
+    @media screen and (max-width: 425px) {
+            padding: 0 2rem;
+            box-sizing: border-box;
+            width: 100%;
+    }
+    .Label{
+        display: block;
+        position: relative;
+        p{
+            position: absolute;
+            font-family: Montserrat;
+            font-style: normal;
+            left: 20px;
+            top: 5px;
+            font-weight: bold;
+            transition: all ease 0.5s;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.04em;
+            color: #8B8B8B;
+        }
+        input,textarea{
+            padding: 8px 14px;
+            box-sizing: border-box;
+            border: none;
+            display: block;
+            width: 100%;
+            margin-bottom: 53px;
+            outline: none;
+            border-bottom: 3px solid #000000;
+            border-left: 3px solid #000000;
+            background: none;
+            &:focus + p{   
+                top: -28px;
+                color: #000;
+                left: 0;
+            }
+        }
+    }
+}
+.SubmitButton{
+    text-align: center;
+    color: #000000;
+    padding: 10px 21px;
+    border: none;
+    cursor: pointer;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    background: transparent;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+
+}
+.BtnWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+.SidebarLink{
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 47px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #000000;
+    position: relative;
+    padding-left: 1rem;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: #000;
+    }
+}

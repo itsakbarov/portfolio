@@ -1,0 +1,74 @@
+.Projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ProjectItem {
+        position: relative;
+        width: 33.3%;
+
+        .hoverBlock {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            backdrop-filter: blur(10px);
+            background: rgba($color: #000000, $alpha: 0.6);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            display: flex;
+            flex-direction: column-reverse;
+            opacity: 0;
+            transition: cubic-bezier(0.645, 0.045, 0.355, 1) all 0.5s;
+            align-items: center;
+
+            a {
+                padding: 6px 10px;
+                text-transform: capitalize;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                background: #000;
+                margin: 5px 0;
+                border-radius: 4px;
+            transition: ease all 0.5s;
+                &:hover{
+                background: rgba(0, 0, 0, 0.247);
+                backdrop-filter: blur(7px);
+
+                }
+                font-weight: 600;
+                transform: translate3d(0, 70px, 0);
+                svg{
+                    width: 15px;
+                    margin-left: 10px;
+                    height: 15px;
+                }
+            }
+        }
+
+        &:hover {
+            .hoverBlock {
+                opacity: 1;
+
+                a {
+                    transform: translate3d(0, 0, 0);
+
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 50%;
+
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,57 @@
+.About{
+    background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
+}
+.container{
+        width: 100%;
+        max-width: 1440px;
+        padding: 50px 15px;
+        color: white;
+        box-sizing: border-box;
+        margin: 0 auto;
+}
+.AboutHeading {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.18538em;
+    color: #FFFFFF;
+    @media screen and (max-width: 525px) {
+        font-size: 24px;
+    }
+    margin-bottom: 30px;
+}
+.AboutText{
+    margin-bottom: 33px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 138.68%;
+    text-align: justify;
+        @media screen and (max-width: 525px) {
+            font-size: 13px;
+        }
+    color: #FFFFFF;
+
+}
+.AboutButton{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+color: #FFFFFF;
+padding: 10px 21px;
+    @media screen and (max-width: 525px) {
+        font-size: 14px;
+    }
+border: none;
+cursor: pointer;
+border-left: 2px solid #FFFFFF;
+border-right: 2px solid #FFFFFF;
+background: transparent;
+
+}

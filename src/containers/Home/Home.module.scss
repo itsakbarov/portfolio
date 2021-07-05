@@ -1,0 +1,100 @@
+.home{
+    height: 100vh;
+    padding-top: 16rem;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(284deg, rgba(0, 0, 0, 1) 45%, #D7D7D7 45%);
+    @media screen and (max-width:768px) {
+        padding-top: 12rem;
+    }
+    @media screen and (max-width:468px) {
+        padding-top: 8rem;
+    }
+    position: relative;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.row{
+    padding: 0;
+}
+.heroName{
+    font-style: normal;
+    font-weight: bold;
+    line-height: 94px;
+    font-size: 40px;
+    display: flex;
+    height: 95px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    color: #000000;
+    font-family: Raleway;
+    @media screen and(max-width: 468px) {
+        h1{
+            font-size: 45px;
+            display: block;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:1024px ) {
+        width: 343px;
+        height: 173px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width:525px ) {
+        font-size: 28px;
+        h1{
+            margin: 0 !important;
+        }
+    }
+}
+.heroSubName{
+    margin-bottom: 54px;
+    font-size: 30px;
+    height: 50px;
+    overflow: hidden;
+        @media screen and (max-width:525px) {
+         margin: 0;
+         font-size: 22px;
+        }
+    
+}
+.heroSubText{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+    color: #919191;
+    margin-bottom: 80px;
+}
+.HeroLink{
+    padding: 10px;
+    box-sizing: border-box;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    margin: 0 15px;
+    transition: all ease 0.5s;
+    &:hover{
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+    }
+    svg{
+        width: 40px;
+        height: 40px;
+    }
+}
+.HeroImage {
+    // width: 500px;
+    height: 800px;
+    object-fit: contain;
+    position: absolute;
+    right: 15%;
+    filter: graysclae(0.5);
+    bottom: 0;
+
+}

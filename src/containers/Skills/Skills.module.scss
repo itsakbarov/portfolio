@@ -1,0 +1,65 @@
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 50px 15px;
+    color: white;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.UsingNowSection{
+    display: flex;align-items:center;justify-content: space-between;flex-wrap: wrap;margin: 70px 0;
+}
+.SkillType{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.13538em;
+    margin-top: 20px;
+    color: #000000;
+        @media screen and (max-width: 525px) {
+            font-size: 15px;
+        }
+}
+.UsingNowHolder{
+    width: 350px;
+    display: flex;
+    height: 150px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 65px;
+    flex-direction: column;
+    @media screen and(max-width: 768px) {
+        width: 250px;
+    }
+    @media screen and(max-width: 425px) {
+        width: 150px;
+        svg{
+            width: 80px;
+        }
+    }
+}
+.UsingNowHeading{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.18538em;
+    color: #000000;
+    padding-left: 5rem;
+      @media screen and(max-width: 425px) {
+          padding: 0;
+          width: 100%;
+          display: block;
+          text-align: center;
+      }
+}
